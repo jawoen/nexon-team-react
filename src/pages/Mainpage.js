@@ -1,65 +1,75 @@
 import React from 'react';
+import './Mainpage.css';
 import { Carousel } from 'antd';
-const contentStyle = {
-    margin: 0,
-    height: '60px',
+const Mainpage = () => {
+  const contentStyle = {
+    height: '160px',
     color: '#fff',
-    fontsize: '24px',
-    lineHeight: '60px',
+    lineHeight: '160px',
     textAlign: 'center',
-    position: 'absolute',
-    left: '50%',
-    bottom: '20px', 
-    transform: 'translateX(-50%)',
-    background: '#ccc'
+    margin:"200px"
   };
-  const backStyle1 = {
-    height: "800px",
-    position: 'relative',
-    backgroundImage: "URL('images/visual_main22.jpg')",
-  }
-  const backStyle2 = {
-    position: 'relative',
-    height: "800px",
-    backgroundImage: "URL('images/visual_main23.jpg')",
-  }
-  const backStyle3 = {
-    position: 'relative',
-    height: "800px",
-    backgroundImage: "URL('images/visual_main24.jpg')",
-  }
-  const backStyle4 = {
-    position: 'relative',
-    height: "800px",
-    backgroundImage: "URL('images/visual_main25.jpg')",
-  }
-  const Mainpage = () => {
-    const onChange = (currentSlide) => {
-      console.log(currentSlide);
-    };
-    return (
-        <Carousel afterChange={onChange}>
-         <div>
-      <div style={backStyle1}>
-        <h3 style={contentStyle}>1/4</h3>
-      </div>
+
+  return (
+    <Carousel autoplay>
+    <div>
+      <h3 style={contentStyle}>
+          <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+             <source src="/video/Hit2.mp4" type="video/mp4" />
+          </video>
+        </h3>
     </div>
     <div>
-      <div style={backStyle2}>
-        <h3 style={contentStyle}>2/4</h3>
-      </div>
+      <h3 style={contentStyle}>
+      <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+        <source src="/video/ProjectD.mp4" type="video/mp4" />
+      </video>
+      </h3>
     </div>
     <div>
-      <div style={backStyle3}>
-        <h3 style={contentStyle}>3/4</h3>
-      </div>
+      <h3 style={contentStyle}>
+      <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+        <source src="/video/BlueArchive.mp4" type="video/mp4" />
+      </video>
+      </h3>
     </div>
     <div>
-      <div style={backStyle4}>
-        <h3 style={contentStyle}>4/4</h3>
-      </div>
+      <h3 style={contentStyle}>
+      <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+        <source src="/video/ProjectMagnum.mp4" type="video/mp4" />
+      </video>
+      </h3>
     </div>
-      </Carousel>
-    );
-}
+  </Carousel>
+    //   <div className='main_1'>
+    //     <div className='video1'>
+    //       <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+    //         <source src="/video/Hit2.mp4" type="video/mp4" />
+    //       </video>
+    //     </div>
+    //     <div className='video2'>
+    //       <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+    //         <source src="/video/ProjectD.mp4" type="video/mp4" />
+    //       </video>
+    //     </div>
+    //     <div className='video3'>
+    //       <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+    //         <source src="/video/BlueArchive.mp4" type="video/mp4" />
+    //       </video>
+    //     </div>
+    //     <div className='video4'>
+    //       <video preload="auto" poster="" muted="muted" autoplay="autoplay" loop="loop">
+    //         <source src="/video/ProjectMagnum.mp4" type="video/mp4" />
+    //       </video>
+    //     </div>
+    // </div>
+  );
+};
+
+
+
+
+
+
+
 export default Mainpage;
