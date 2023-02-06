@@ -6,22 +6,23 @@
     width: 100%;
     justify-content: space-between;
     box-shadow: 0 0 5px 5px #eee;
-    height: 100px;
+    height: 80px;
     align-items: center;
     padding: 0 30px;
-    background-color: #eee;
+    background-color: white;
+    z-index: 10;
 }
 .menu h1 img{
-    width: 120%;
+    width: 100%;
 }
 .menu ul {
     display: flex;
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
 }
 .menu ul li {
-    padding: 0 60px ;
+    padding: 0 40px ;
 }
 .icon {
     font-size: 40px;
